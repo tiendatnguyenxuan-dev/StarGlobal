@@ -33,6 +33,12 @@ Create a suitable URL-friendly camelCase or kebab-case slug for each asset.
 Determine an appropriate project name based on the assets listed.
 Provide constructive suggestions or improvements for naming consistency or catalog structure.
 
+Language requirement:
+- Detect the language of the input list.
+- If the input is primarily in Vietnamese, write all generated textual values (such as category names, the project name, and the items in the improvements array) in Vietnamese.
+- If the input is primarily in English, write all generated textual values in English.
+- Always preserve the "originalName" of the assets exactly as they were written in the input, do not translate them.
+
 You must return response in STRICT JSON format matching the schema. Do not output any markdown wrapper or explanation, output ONLY raw JSON.`;
 
     const schema = {
